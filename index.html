@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق رسائل الهدايا الإلكترونية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- خلفية النجوم الليلية المتحركة -->
+    <div class="night-sky" id="starsContainer"></div>
+
+    <div class="gift-container">
+        <!-- الإطار المتحرك حول البطاقة -->
+        <div class="animated-border">
+            <div class="card-content">
+                <!-- الأفاتار الخاص بالمرسل أو الهدية -->
+                <div class="avatar-frame">
+                    <img src="https://i.imgur.com/6Q3w5X9.png" alt="Avatar" class="avatar-img">
+                </div>
+                
+                <h2>🎁 هدية خاصة لك!</h2>
+                <p id="giftMessage">"كل عام وأنت بخير، هذه رسالة مليئة بالحب والتقدير بمناسبة هذه اللحظة الجميلة."</p>
+                
+                <!-- مشغل الموسيقى -->
+                <audio id="giftAudio" loop>
+                    <source src="https://www.bensound.com/bensound-music/bensound-tenderness.mp3" type="audio/mp3">
+                    متصفحك لا يدعم تشغيل الصوت.
+                </audio>
+                
+                <button onclick="toggleMusic()" id="musicBtn">🎵 تشغيل الموسيقى</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+                              
